@@ -211,48 +211,15 @@
         Admissions Open · Apex-25 Batch
       </div>
 
-      <!-- Redesigned headline block -->
-      <div class="space-y-3">
-        <!-- Line 1: Star rating -->
-        <div class="flex items-center gap-3">
-          <div class="flex items-center gap-1">
-            {[...Array(5)].map((_, i) => (
-              <svg class="w-5 h-5 text-brand-500 fill-current" viewBox="0 0 20 20">
-                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-              </svg>
-            ))}
-          </div>
-          <span class="font-display text-2xl md:text-3xl font-800 text-white">
-            Top Rated <span class="text-brand-500">+4.9/5</span> Everywhere
-          </span>
-        </div>
+      <h1 class="font-display text-5xl md:text-6xl lg:text-7xl font-800 leading-[1.05] text-white">
+       Top Rated <span class="accent-line">+4.9/5</span> Everywhere<br/>
+        <span class="text-brand-500">5-Levels</span> Percentile Based Batches
+      </h1>
 
-        <!-- Divider line -->
-        <div class="flex items-center gap-3">
-          <div class="h-px w-8 bg-brand-500/50"></div>
-          <div class="h-px flex-1 bg-white/10"></div>
-        </div>
-
-        <!-- Line 2: Batches -->
-        <div class="flex items-center gap-3">
-          <!-- 5-levels icon strip -->
-          <div class="flex items-end gap-0.5 h-8 shrink-0">
-            {[2, 3, 4, 5, 6].map((h) => (
-              <div
-                class="w-1.5 rounded-sm bg-brand-500"
-                style={`height: ${h * 4}px; opacity: ${0.4 + h * 0.1}`}
-              ></div>
-            ))}
-          </div>
-          <span class="font-display text-2xl md:text-3xl font-800 text-white">
-            5-Level <span class="accent-line">Percentile-Based</span> Batches
-          </span>
-        </div>
-      </div>
-
-      <p class="text-lg text-ink-200 max-w-xl leading-relaxed">
-        India's most trusted test-prep institute since 2016. World-class faculty, ability-based batches, and an unbreakable money-back guarantee.
-      </p>
+      <h2 class="font-display text-4xl md:text-5xl font-800 text-white">
+CAT/GMAT 100%ilers as Faculty<br>
+Ability Based Model - Lifetime Validity<br>
++99%ile or Fee Refund Promise<br> </h2>
 
       <!-- Guarantees row -->
       <div class="flex flex-wrap gap-3">
@@ -272,8 +239,9 @@
       </div>
     </div>
 
-    <!-- Right: Stats + Apex image (unchanged) -->
+    <!-- Right: Stats + Apex image -->
     <div class="relative">
+      <!-- Apex image -->
       <div class="relative rounded-3xl overflow-hidden border border-white/10">
         <img
           src="https://www.edushastra.com/wp-content/uploads/2026/01/Apex-final.webp"
@@ -289,6 +257,7 @@
         </div>
       </div>
 
+      <!-- Floating stats -->
       <div class="absolute -left-8 top-1/3 glass rounded-2xl p-4 hidden lg:block">
         <p class="font-display text-3xl font-800 text-brand-400 stat-num">10,000+</p>
         <p class="text-xs text-ink-200 mt-1">Students Placed</p>
